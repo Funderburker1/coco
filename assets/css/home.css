@@ -1,0 +1,206 @@
+.header {
+   padding: 2rem 2rem 0rem 2rem;
+
+}
+
+.header nav {
+   height: 4rem;
+}
+
+.header nav .logo {
+   color: var(--color-primary);
+   font-size: 2.5rem;
+   font-weight: 700;
+
+   letter-spacing: 0.1rem;
+}
+
+.header nav .logo span {
+   color: var(--color-theme);
+   font-weight: 400;
+}
+
+.header nav i {
+   cursor: pointer;
+   color: var(--color-theme);
+   font-size: 2rem;
+   padding: .8rem;
+   border-radius: 3rem;
+}
+
+.header nav,
+ul {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/*-----------------------Menu Modal---------------------------------*/
+.menu-burguer {
+   display: none;
+   position: absolute;
+   top: 0;
+   z-index: 1000;
+   width: 100%;
+   height: 100vh;
+   background-color: gray;
+}
+
+.menu-burguer i {
+   position: absolute;
+   color: var(--color-theme);
+   cursor: pointer;
+   right: 0;
+   margin: 2rem;
+   padding: 1rem;
+   border-radius: 3rem;
+   transition: all 0.4s;
+
+}
+
+.menu-burguer .menu {
+   width: 100%;
+   height: 100%;
+   background-color: var(--background-dark);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.menu-burguer .menu li {
+   margin: 2.5rem;
+   font-size: 2.5rem;
+   font-weight: 700;
+}
+
+.menu-burguer .menu a {
+   padding: 1.5rem 4rem;
+   border-radius: 3rem;
+   color: var(--color-theme);
+}
+
+/*--------------------------------Home--------------------------------*/
+.home-container {
+   width: 100%;
+   height: 90vh;
+   padding: 0 2rem;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas: "title avatar";
+}
+
+.home-container .title {
+   grid-area: title;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.home-container .title p {
+   font-size: 1.8rem;
+   color: #bbb;
+}
+
+.home-container .title h1 {
+   font-size: 5.5rem;
+   color: var(--color-primary);
+}
+
+.home-container .title h2 {
+   font-size: 2rem;
+   color: var(--color-theme);
+}
+
+.home-container .title h2::after {
+   content: "|";
+   opacity: 1;
+   margin-left: 5px;
+   display: inline-block;
+   white-space: nowrap;
+   -webkit-animation: blink 0.7s infinite;
+   animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+
+   0%,
+   100% {
+      opacity: 1;
+   }
+
+   50% {
+      opacity: 0;
+   }
+}
+
+.home-container .title .btn-home {
+   width: 17rem;
+   margin-top: 3rem;
+   padding: 1rem 2.5rem;
+   font-size: 16px;
+   font-weight: 500;
+   color: var(--color-theme);
+   background-color: transparent;
+   line-height: 1.5;
+   cursor: pointer;
+   border-radius: 3rem;
+   transition: all 0.3s ease;
+   display: inline-block;
+   border: none;
+}
+
+.home-container .avatarHome {
+   grid-area: avatar;
+   max-width: 43rem;
+   display: block;
+   margin: auto;
+   border-radius: 50%;
+   padding: 1.5rem;
+}
+
+.home-container .avatarHome img {
+   width: 100%;
+   border-radius: 50%;
+   border: 1rem solid transparent;
+}
+
+/*--------------------------------Resposividade--------------------------------*/
+
+@media(max-width: 768px) {
+   .home-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "avatar"
+         "title";
+      padding-top: 4rem;
+   }
+
+   .home-container .title {
+      align-items: center;
+      margin-top: 4rem;
+      padding-bottom: 10rem;
+   }
+
+   .home-container .avatarHome {
+      max-width: 35rem;
+   }
+
+}
+
+@media(max-width: 481px) {
+   .home-container .title {
+      grid-area: title;
+      align-items: center;
+      margin-top: 4rem;
+      padding-bottom: 10rem;
+   }
+
+   .home-container .avatarHome {
+      max-width: 25rem;
+   }
+
+   .home-container .title h1 {
+      font-size: 4rem;
+   }
+}
