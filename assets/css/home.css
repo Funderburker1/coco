@@ -1,6 +1,7 @@
 .header {
-   padding: 2rem 2rem 0rem 2rem;
-
+   position: relative;
+   z-index: 10;
+   padding: 2rem 7rem 0rem 7rem;
 }
 
 .header nav {
@@ -20,12 +21,40 @@
    font-weight: 400;
 }
 
+.header nav .nav-left {
+
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+
+.header nav .menu-desktop {
+   width: 40%;
+   /* background-color: red; */
+}
+
+.header nav .menu-desktop a {
+   color: var(--color-primary);
+   padding: 1rem;
+
+   transition: all 0.4s;
+   font-weight: 400;
+   /* border-bottom: 2px solid var(--color-theme); */
+}
+
+.header nav .menu-desktop a:hover {
+   color: var(--color-theme);
+   transition: all 0.4s;
+   cursor: pointer;
+}
+
 .header nav i {
    cursor: pointer;
    color: var(--color-theme);
    font-size: 2rem;
    padding: .8rem;
    border-radius: 3rem;
+   display: none;
 }
 
 .header nav,
@@ -37,13 +66,11 @@ ul {
 
 /*-----------------------Menu Modal---------------------------------*/
 .menu-burguer {
-   display: none;
-   position: absolute;
+   position: fixed;
    top: 0;
    z-index: 1000;
    width: 100%;
-   height: 100vh;
-   background-color: gray;
+   height: 100%;
 }
 
 .menu-burguer i {
@@ -55,17 +82,18 @@ ul {
    padding: 1rem;
    border-radius: 3rem;
    transition: all 0.4s;
-
 }
 
 .menu-burguer .menu {
    width: 100%;
-   height: 100%;
+   height: 100vh;
    background-color: var(--background-dark);
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   padding-top: 10rem;
+   position: fixed;
 }
 
 .menu-burguer .menu li {
@@ -78,41 +106,43 @@ ul {
    padding: 1.5rem 4rem;
    border-radius: 3rem;
    color: var(--color-theme);
+   cursor: pointer;
 }
 
 /*--------------------------------Home--------------------------------*/
-.home-container {
+.home {
    width: 100%;
    height: 90vh;
-   padding: 0 2rem;
+   padding: 0 7rem;
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-areas: "title avatar";
 }
 
-.home-container .title {
+.home .title {
+   z-index: 1;
    grid-area: title;
    display: flex;
    flex-direction: column;
    justify-content: center;
 }
 
-.home-container .title p {
+.home .title p {
    font-size: 1.8rem;
    color: #bbb;
 }
 
-.home-container .title h1 {
+.home .title h1 {
    font-size: 5.5rem;
    color: var(--color-primary);
 }
 
-.home-container .title h2 {
+.home .title h2 {
    font-size: 2rem;
    color: var(--color-theme);
 }
 
-.home-container .title h2::after {
+.home .title h2::after {
    content: "|";
    opacity: 1;
    margin-left: 5px;
@@ -134,23 +164,12 @@ ul {
    }
 }
 
-.home-container .title .btn-home {
+.home .title .btn-home {
    width: 17rem;
-   margin-top: 3rem;
-   padding: 1rem 2.5rem;
-   font-size: 16px;
-   font-weight: 500;
-   color: var(--color-theme);
-   background-color: transparent;
-   line-height: 1.5;
-   cursor: pointer;
-   border-radius: 3rem;
-   transition: all 0.3s ease;
-   display: inline-block;
-   border: none;
 }
 
-.home-container .avatarHome {
+.home .avatarHome {
+   z-index: 1;
    grid-area: avatar;
    max-width: 43rem;
    display: block;
@@ -159,7 +178,7 @@ ul {
    padding: 1.5rem;
 }
 
-.home-container .avatarHome img {
+.home .avatarHome img {
    width: 100%;
    border-radius: 50%;
    border: 1rem solid transparent;
@@ -168,39 +187,45 @@ ul {
 /*--------------------------------Resposividade--------------------------------*/
 
 @media(max-width: 768px) {
-   .home-container {
+
+   .header {
+      padding: 2rem 2rem 0rem 2rem;
+
+   }
+
+   .home {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-areas: "avatar"
          "title";
-      padding-top: 4rem;
+      padding: 4rem 2rem 0rem 2rem;
    }
 
-   .home-container .title {
+   .home .title {
       align-items: center;
       margin-top: 4rem;
       padding-bottom: 10rem;
    }
 
-   .home-container .avatarHome {
+   .home .avatarHome {
       max-width: 35rem;
    }
 
 }
 
 @media(max-width: 481px) {
-   .home-container .title {
+   .home .title {
       grid-area: title;
       align-items: center;
       margin-top: 4rem;
       padding-bottom: 10rem;
    }
 
-   .home-container .avatarHome {
+   .home .avatarHome {
       max-width: 25rem;
    }
 
-   .home-container .title h1 {
+   .home .title h1 {
       font-size: 4rem;
    }
 }

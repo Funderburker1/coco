@@ -1,0 +1,150 @@
+.about {
+   width: 100%;
+   padding: 0 7rem;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-areas: "title title title"
+      "avatar text text"
+      "skills skills skills";
+}
+
+.about .aboutTitle {
+   grid-area: title;
+   padding-top: 4rem;
+}
+
+.about .box-avatar {
+   grid-area: avatar;
+}
+
+.about .aboutAvatar {
+   max-width: 43rem;
+   display: block;
+   margin: auto;
+   padding: 1.5rem;
+}
+
+.about .aboutAvatar img {
+   width: 100%;
+   border: 1rem solid transparent;
+}
+
+.about .aboutText {
+   grid-area: text;
+   color: var(--color-primary);
+   padding-left: 1rem;
+
+}
+
+.about .aboutText p {
+   font-size: 1.6rem;
+   line-height: 2.6rem;
+   margin-bottom: 1.5rem;
+   color: #bbb;
+}
+
+.about .aboutText .btn-text:nth-child(2) {
+   margin-left: 2rem;
+}
+
+.about .socialMedia {
+   margin-top: 2rem;
+   /* background-color: red; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.about .socialMedia i {
+   /* width: 5rem;
+   height: 5rem; */
+   margin-left: 1rem;
+   padding: 1rem;
+   border-radius: 3rem;
+   font-size: 2rem;
+   color: #bbb;
+   background-color: var(--background-dark);
+}
+
+.about .socialMedia i:hover {
+   color: var(--color-theme);
+   cursor: pointer;
+}
+
+.about .skills-container {
+   grid-area: skills;
+   width: 100%;
+   height: 100vh;
+   /* background-color: blue; */
+}
+
+.about .skills-container .about-tabs {
+   width: 100%;
+   padding: 6rem 1.5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* background-color: aqua; */
+}
+
+.about .skills-container .about-tabs .tab-item {
+   padding: .5rem 1rem;
+   margin-right: 1.5rem;
+   border-radius: 3rem;
+   background-color: var(--background-dark);
+   color: #bbb;
+   font-size: 1.6rem;
+   font-weight: 500;
+   text-transform: capitalize;
+}
+
+.about .skills-container .about-tabs .btn-link-p {
+   color: #bbbbbb;
+   border-bottom: 0.3rem solid #04D361;
+   padding: .5rem .5rem 0rem .5rem;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.5;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.about .skills-container .about-tabs .btn-link-p:hover {
+   color: var(--color-theme);
+   transition: all 0.3s ease;
+}
+
+.about .tab-content {
+   display: none;
+}
+
+.about .tab-content.active {
+   display: block;
+   animation: fadeInTop 0.5s ease;
+}
+
+
+@media(max-width: 768px) {
+   .about {
+      padding: 0 2rem;
+      grid-template-areas: "title title title"
+         "avatar avatar avatar"
+         "text text text"
+         "skills skills skills";
+   }
+
+   .about .aboutAvatar {
+      max-width: 100%;
+   }
+
+   .about .aboutText {
+      margin-top: 2rem;
+      padding: 0;
+   }
+
+   .about .aboutText p {
+      font-size: 1.4rem;
+      line-height: 2.3rem;
+   }
+
+}

@@ -87,3 +87,74 @@ input {
 .hover-in-shadow:hover::after {
    box-shadow: var(--inner-shadow)
 }
+
+.btns {
+   margin-top: 3rem;
+   padding: 1rem 2.5rem;
+   font-size: 16px;
+   font-weight: 500;
+   color: var(--color-theme);
+   background-color: transparent;
+   line-height: 1.5;
+   cursor: pointer;
+   border-radius: 3rem;
+   transition: all 0.3s ease;
+   display: inline-block;
+   border: none;
+}
+
+.desactive {
+   display: none !important;
+}
+
+.box-title {
+   color: var(--color-primary);
+   padding: 0 1.5rem;
+   max-width: 100%;
+   text-align: center;
+   display: inline-block;
+   font-family: 'Baloo 2', 'Roboto', sans-serif;
+   font-size: 3rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: 6rem;
+   text-align: center;
+}
+
+.box-title:before {
+   content: attr(data-heading);
+   display: block;
+   font-size: 1.4rem;
+   font-weight: 500;
+   color: var(--color-theme);
+}
+
+
+@media (max-width: 768px) {
+   .header nav i {
+      cursor: pointer;
+      color: var(--color-theme);
+      font-size: 2rem;
+      padding: .8rem;
+      border-radius: 3rem;
+      display: flex !important;
+   }
+
+   .header nav .menu-desktop {
+      display: none;
+   }
+}
+
+.tab-item:hover:not(.active) {
+   opacity: 0.6;
+   cursor: pointer;
+}
+
+.tab-item.active {
+   color: var(--color-theme) !important;
+   cursor: default;
+}
+
+.section.hide {
+   display: none;
+}
