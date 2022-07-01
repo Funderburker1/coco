@@ -22,7 +22,6 @@
 }
 
 .header nav .nav-left {
-
    display: flex;
    justify-content: start;
    align-items: center;
@@ -55,6 +54,7 @@
    padding: .8rem;
    border-radius: 3rem;
    display: none;
+   background-color: var(--background-dark);
 }
 
 .header nav,
@@ -421,10 +421,6 @@ ul {
       padding: 10rem 0;
    } */
 
-   .home .avatarHome {
-      max-width: 35rem;
-   }
-
    .home .title p {
       font-size: 1.8rem;
       color: #bbb;
@@ -444,12 +440,7 @@ ul {
 
 @media(max-width: 481px) {
    .home .title {
-      grid-area: title;
       align-items: center;
-   }
-
-   .home .avatarHome {
-      max-width: 25rem;
    }
 
    .home .title h1 {
