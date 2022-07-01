@@ -94,7 +94,8 @@ input {
    font-size: 16px;
    font-weight: 500;
    color: var(--color-theme);
-   background-color: transparent;
+   background: var(--background-dark);
+   /* background-color: transparent; */
    line-height: 1.5;
    cursor: pointer;
    border-radius: 3rem;
