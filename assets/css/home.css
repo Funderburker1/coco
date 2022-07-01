@@ -117,7 +117,7 @@ ul {
    /* display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-areas: "title banner"; */
-   display: flex;
+   display: flex !important;
    justify-content: center;
    align-items: center;
 }

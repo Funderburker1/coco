@@ -36,7 +36,7 @@ function openPag(e, pag) {
       tablinks[i].className = tablinks[i].className.replace("active", "");
    }
 
-   document.getElementById(pag).style.display = "flex";
+   document.getElementById(pag).style.display = "grid";
    e.currentTarget.className += "active";
    document.querySelector('.menu-burguer').style.display = 'none';
 }
