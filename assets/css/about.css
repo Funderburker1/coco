@@ -10,7 +10,7 @@
 
 .about .aboutTitle {
    grid-area: title;
-   padding-top: 4rem;
+   padding-top: 8rem;
 }
 
 .about .box-avatar {
@@ -48,15 +48,12 @@
 
 .about .socialMedia {
    margin-top: 2rem;
-   /* background-color: red; */
    display: flex;
    justify-content: center;
    align-items: center;
 }
 
 .about .socialMedia i {
-   /* width: 5rem;
-   height: 5rem; */
    margin-left: 1rem;
    padding: 1rem;
    border-radius: 3rem;
@@ -74,7 +71,6 @@
    grid-area: skills;
    width: 100%;
    height: 100%;
-   /* background-color: blue; */
 }
 
 .about .skills-container .about-tabs {
@@ -83,11 +79,10 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   /* background-color: aqua; */
 }
 
 .about .skills-container .about-tabs .tab-item {
-   padding: .5rem 1rem;
+   padding: .8rem 1.5rem;
    margin-right: 1.5rem;
    border-radius: 3rem;
    background-color: var(--background-dark);
@@ -229,7 +224,39 @@
    margin-top: 1rem;
 }
 
+.about .skills {
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
 
+.about .skills h1 {
+   font-family: 'Baloo 2', sans-serif;
+   font-weight: 700;
+   color: var(--color-primary);
+   margin: 3rem;
+   text-transform: uppercase;
+}
+
+.about .skills strong {
+   color: var(--color-theme);
+   margin-left: .2rem;
+   font-size: 3.5rem;
+   font-family: sans-serif;
+}
+
+.about .skills .boxSkill {
+   /* background-color: red; */
+   text-align: center;
+}
+
+.about .skills .boxSkill i {
+   font-size: 6rem;
+   color: var(--color-theme);
+   margin: 2rem;
+   padding: 1.5rem;
+}
 
 
 @media(max-width: 768px) {
@@ -263,5 +290,4 @@
       width: 100%;
       padding-bottom: 3rem;
    }
-
 }

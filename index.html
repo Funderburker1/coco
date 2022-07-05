@@ -29,9 +29,9 @@
          <h2 class="logo">Portfó<span>lio.</span></h2>
          <i class="las la-bars outer-shadow hover-in-shadow"></i>
          <ul class="menu-desktop">
-            <li><a class="tablinks" onclick="openPag(event, 'home')">Home</a>
+            <li><a class="tablinks" onclick="openPag(event, 'home')" id="defaultOpen">Home</a>
             </li>
-            <li><a class="tablinks" onclick="openPag(event, 'about')" id="defaultOpen">Sobre</a></li>
+            <li><a class="tablinks" onclick="openPag(event, 'about')">Sobre</a></li>
             <li><a class="tablinks" onclick="openPag(event, 'port')">Portfólio</a></li>
             <li><a class="tablinks" onclick="openPag(event, 'contact')">Contato</a></li>
          </ul>
@@ -58,8 +58,9 @@
          <div class="title">
             <p>Olá, Me Chamo</p>
             <h1>João Vitor</h1>
-            <h2>Dev Front-End e UX Designer.</h2>
-            <a class="btns btn-home outer-shadow hover-in-shadow" href="">Mais sobre mim</a>
+            <h2>Dev Front-End e UI Designer.</h2>
+            <a class="btns btn-home outer-shadow hover-in-shadow"
+               href="https://www.linkedin.com/in/jo%C3%A3o-vitor-camargo-49815a1b0/" target="_blank">Mais sobre mim</a>
          </div>
          <!-- <div class="avatarHome inner-shadow ">
             <img class="outer-shadow" src="assets/img/eu.svg" alt="Avatar">
@@ -129,11 +130,19 @@
                <span class="tab-item outer-shadow active" data-target=".skills">Skills</span>
                <span class="tab-item" data-target=".services">Serviços</span>
                <span class="tab-item" data-target=".education">Cursos</span>
-               <a href="#portfolio" class="btn-link-p">Portfolio</a>
+               <!-- <a href="#portfolio" class="btn-link-p">Portfolio</a> -->
             </div>
 
             <div class="skills tab-content section active">
-               skills
+               <h1>Conhecimentos<strong>.</strong></h1>
+               <div class="boxSkill">
+                  <i class="lab la-js-square outer-shadow "></i>
+                  <i class="lab la-html5 outer-shadow"></i>
+                  <i class="lab la-css3-alt outer-shadow"></i>
+                  <i class="lab la-sass outer-shadow"></i>
+                  <i class="lab la-react outer-shadow"></i>
+                  <i class="lab la-figma outer-shadow"></i>
+               </div>
             </div>
 
             <div class="services tab-content section ">
@@ -143,7 +152,7 @@
                   <p>Desenvolvimento de sites profissionais, sistemas web, blogs e lojas virtuais.</p>
                </div>
                <div class="boxServices outer-shadow">
-                  <i class="lab la-figma"></i>
+                  <i class="las la-pencil-ruler"></i>
                   <h1>UI/UX Designer</h1>
                   <p>Desenho de layouts que se adequam ao seu negócio de forma profissional e fiel no desenvolvimento.
                   </p>
@@ -196,6 +205,13 @@
          </div>
       </section>
       <!--About End-->
+
+
+      <!--Contact Start-->
+      <section id="contact" class="contact container tabcontent">
+         <h1>opa</h1>
+      </section>
+      <!--Contact End-->
    </main>
    <script src="assets/js/global.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
