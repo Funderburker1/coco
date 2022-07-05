@@ -33,7 +33,6 @@
    grid-area: text;
    color: var(--color-primary);
    padding-left: 1rem;
-
 }
 
 .about .aboutText p {
@@ -74,7 +73,7 @@
 .about .skills-container {
    grid-area: skills;
    width: 100%;
-   height: 100vh;
+   height: 100%;
    /* background-color: blue; */
 }
 
@@ -119,9 +118,118 @@
 }
 
 .about .tab-content.active {
-   display: block;
+   display: flex;
    animation: fadeInTop 0.5s ease;
 }
+
+.about .services {
+   width: 100%;
+   padding-bottom: 5rem;
+   justify-content: center;
+   align-items: center;
+   gap: 3rem;
+}
+
+.about .services .boxServices {
+   width: 18rem;
+   height: 27rem;
+   padding: 1.5rem;
+   border-radius: 3rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-color: var(--background-dark);
+}
+
+.about .services .boxServices i {
+   font-size: 7rem;
+   margin-bottom: 2rem;
+   color: var(--color-theme)
+}
+
+.about .services .boxServices h1 {
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+   color: var(--color-primary);
+}
+
+.about .services .boxServices p {
+   font-size: 1.2rem;
+   color: #bbb;
+   line-height: 1.6rem;
+}
+
+.about .education {
+   margin-bottom: 5rem;
+   flex-direction: column;
+   align-items: center;
+}
+
+.about .education .boxEducation {
+   display: grid;
+   grid-template-columns: 5rem 1fr;
+   grid-template-areas: "row text ";
+   padding: 3rem 0;
+   position: relative;
+   width: 100%;
+}
+
+.about .education .boxEducation .rowTimeline {
+   grid-area: row;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.about .education .boxEducation::before {
+   z-index: 1;
+   content: '';
+   width: 0.1rem;
+   height: 100%;
+   left: 2.5rem;
+   top: 0;
+   background-color: #353535;
+   position: absolute;
+}
+
+.about .education .boxEducation .rowTimeline .row {
+   border: 2px solid yellow;
+   height: 100%;
+}
+
+.about .education .boxEducation .rowTimeline i {
+   font-size: 2.5rem;
+   padding: .5rem;
+   border: 1px solid #353535;
+   background-color: var(--background-dark);
+   border-radius: 50%;
+   color: var(--color-theme);
+   z-index: 5;
+   position: relative;
+}
+
+.about .education .boxEducation .boxText {
+   grid-area: text;
+   color: #bbb;
+   padding-top: 1rem;
+}
+
+.about .education .boxEducation .boxText h1 {
+   color: var(--color-primary);
+}
+
+.about .education .boxEducation .boxText p:nth-of-type(1) {
+   font-size: 1.2rem;
+   margin-bottom: 1rem;
+}
+
+.about .education .boxEducation .boxText p:nth-of-type(2) {
+   margin-top: 1rem;
+}
+
+
 
 
 @media(max-width: 768px) {
@@ -145,6 +253,15 @@
    .about .aboutText p {
       font-size: 1.4rem;
       line-height: 2.3rem;
+   }
+
+   .about .services {
+      flex-direction: column;
+   }
+
+   .about .services .boxServices {
+      width: 100%;
+      padding-bottom: 3rem;
    }
 
 }

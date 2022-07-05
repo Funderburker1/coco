@@ -35,6 +35,7 @@ html {
 
 body {
    width: 100%;
+   height: 100%;
    position: relative;
    z-index: 0;
    background-color: var(--background-dark);
@@ -47,7 +48,6 @@ body,
 button,
 input {
    font-size: clamp(14px, 1.6rem, 2vw);
-
 }
 
 .container {

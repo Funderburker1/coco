@@ -29,9 +29,9 @@
          <h2 class="logo">Portfó<span>lio.</span></h2>
          <i class="las la-bars outer-shadow hover-in-shadow"></i>
          <ul class="menu-desktop">
-            <li><a class="tablinks" onclick="openPag(event, 'home')" id="defaultOpen">Home</a>
+            <li><a class="tablinks" onclick="openPag(event, 'home')">Home</a>
             </li>
-            <li><a class="tablinks" onclick="openPag(event, 'about')">Sobre</a></li>
+            <li><a class="tablinks" onclick="openPag(event, 'about')" id="defaultOpen">Sobre</a></li>
             <li><a class="tablinks" onclick="openPag(event, 'port')">Portfólio</a></li>
             <li><a class="tablinks" onclick="openPag(event, 'contact')">Contato</a></li>
          </ul>
@@ -94,7 +94,7 @@
       <!--Home End-->
 
       <!--About Start-->
-      <dection id="about" class="about container tabcontent">
+      <section id="about" class="about container tabcontent">
          <h1 data-heading="About me" class="aboutTitle box-title">Sobre Mim</h1>
 
 
@@ -135,14 +135,66 @@
             <div class="skills tab-content section active">
                skills
             </div>
-            <div class="services tab-content section">
-               serviços
+
+            <div class="services tab-content section ">
+               <div class="boxServices outer-shadow">
+                  <i class="las la-laptop-code"></i>
+                  <h1>Web Designer</h1>
+                  <p>Desenvolvimento de sites profissionais, sistemas web, blogs e lojas virtuais.</p>
+               </div>
+               <div class="boxServices outer-shadow">
+                  <i class="lab la-figma"></i>
+                  <h1>UI/UX Designer</h1>
+                  <p>Desenho de layouts que se adequam ao seu negócio de forma profissional e fiel no desenvolvimento.
+                  </p>
+               </div>
+               <div class="boxServices outer-shadow">
+                  <i class="las la-code"></i>
+                  <h1>Código Semântico</h1>
+                  <p>Estratégia e monitoração para seu negócio, fazendo com que seu site apareça cada vez melhor nas
+                     buscas.</p>
+               </div>
             </div>
+
             <div class="education tab-content section">
-               cursos
+               <div>
+                  <div class="boxEducation">
+                     <div class="rowTimeline">
+                        <i class="las la-graduation-cap"></i>
+
+                     </div>
+                     <div class="boxText">
+                        <p>2019 - Cursando</p>
+                        <h1>Universidade Nove de Julho (Uni9)</h1>
+                        <p>Cursando o 8° semestre de Ciências da Computação</p>
+                     </div>
+                  </div>
+                  <div class="boxEducation">
+                     <div class="rowTimeline">
+                        <i class="las la-graduation-cap"></i>
+
+                     </div>
+                     <div class="boxText">
+                        <p>0000 - 0000</p>
+                        <h1>Em breve</h1>
+                        <p></p>
+                     </div>
+                  </div>
+                  <div class="boxEducation">
+                     <div class="rowTimeline">
+                        <i class="las la-graduation-cap"></i>
+
+                     </div>
+                     <div class="boxText">
+                        <p>0000 - 0000</p>
+                        <h1>Em breve</h1>
+                        <p></p>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
-      </dection>
+      </section>
       <!--About End-->
    </main>
    <script src="assets/js/global.js"></script>
