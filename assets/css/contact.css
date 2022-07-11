@@ -70,3 +70,28 @@
 .contact .contactFooter .footerContent b {
    color: var(--color-theme);
 }
+
+@media(max-width: 768px) {
+   .contact .contactContent {
+      flex-direction: column;
+      margin-top: 3rem;
+   }
+}
+
+@media(max-width: 420px) {
+   .contact .contactContent {
+      flex-direction: column;
+      margin-top: 3rem;
+      padding: 3rem;
+   }
+
+   .contact .contactTitle {
+      font-size: 2rem;
+   }
+
+
+   .contact .contactFooter .footerContent {
+      flex-direction: column;
+      margin: 0rem 0rem 2rem 0rem;
+   }
+}
