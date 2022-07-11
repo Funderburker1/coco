@@ -10,6 +10,7 @@
    <link rel="stylesheet" href="assets/css/global.css">
    <link rel="stylesheet" href="assets/css/home.css">
    <link rel="stylesheet" href="assets/css/about.css">
+   <link rel="stylesheet" href="assets/css/contact.css">
 
    <!--Fonts-->
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,11 +30,11 @@
          <h2 class="logo">Portfó<span>lio.</span></h2>
          <i class="las la-bars outer-shadow hover-in-shadow"></i>
          <ul class="menu-desktop">
-            <li><a class="tablinks" onclick="openPag(event, 'home')" id="defaultOpen">Home</a>
+            <li><a class="tablinks" onclick="openPag(event, 'home')">Home</a>
             </li>
             <li><a class="tablinks" onclick="openPag(event, 'about')">Sobre</a></li>
             <li><a class="tablinks" onclick="openPag(event, 'port')">Portfólio</a></li>
-            <li><a class="tablinks" onclick="openPag(event, 'contact')">Contato</a></li>
+            <li><a class="tablinks" onclick="openPag(event, 'contact')" id="defaultOpen">Contato</a></li>
          </ul>
       </nav>
    </header>
@@ -209,7 +210,32 @@
 
       <!--Contact Start-->
       <section id="contact" class="contact container tabcontent">
-         <h1>opa</h1>
+         <h1 data-heading="Contact" class="contactTitle box-title">Entrar em contato</h1>
+
+         <div class="contactContent">
+            <div class="contactBox outer-shadow">
+               <i class="lab la-whatsapp"></i>
+               <h2>Whatsapp</h2>
+               <p>55(11)94370-9343</p>
+            </div>
+            <div class="contactBox outer-shadow">
+               <i class="las la-envelope"></i>
+               <h2>E-Mail</h2>
+               <p>joaovscamargo@gmail.com</p>
+            </div>
+            <div class="contactBox outer-shadow">
+               <i class="las la-map-marker "></i>
+               <h2>Endereço</h2>
+               <p>São Paulo-SP/Liberdade</p>
+            </div>
+         </div>
+
+         <footer class="contactFooter">
+            <div class="footerContent">
+               <p>© 2022</p>
+               <p>Powered by <b>{</b> devjoaocamargo <b>}</b></p>
+            </div>
+         </footer>
       </section>
       <!--Contact End-->
    </main>
