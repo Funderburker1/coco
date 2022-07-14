@@ -130,6 +130,18 @@ input {
    color: var(--color-theme);
 }
 
+@keyframes fadeInTop {
+   0% {
+      opacity: 0;
+      transform: translateY(-2.5rem);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
 
 @media (max-width: 768px) {
    .header nav i {
@@ -158,4 +170,13 @@ input {
 
 .section.hide {
    display: none;
+}
+
+.hide {
+   display: none;
+}
+
+.show {
+   display: block;
+   animation: fadeInTop 0.5s ease;
 }

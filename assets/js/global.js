@@ -10,7 +10,7 @@ const titulo = document.querySelector('.title h2');
 typeWriter(titulo);
 
 
-//menu modal start
+/*----------------menu modal start-------------*/
 const openMenu = document.querySelector('.header i').addEventListener('click', function () {
    document.querySelector('.menu-burguer').style.display = 'flex';
    document.querySelector('.menu-burguer').style.overflowX = 'hidden';
@@ -19,7 +19,7 @@ const openMenu = document.querySelector('.header i').addEventListener('click', f
 const closeMenu = document.querySelector('.menu-burguer i').addEventListener('click', function () {
    document.querySelector('.menu-burguer').style.display = 'none';
 })
-//menu modal send
+/*----------------menu modal end-------------*/
 
 
 //paginação
@@ -64,6 +64,37 @@ tabsContainer.addEventListener("click", (event) => {
    }
 })
 /*---------------------about section tabs end-----------------------*/
+
+
+/*------------------------portfolio section start-------------------------*/
+const portTabs = document.querySelector('.port-tabs'),
+   portfolioItemsBox = document.querySelector('.portBox'),
+   portfolioItems = document.querySelectorAll('.box');
+
+
+portTabs.addEventListener("click", (event) => {
+   if (event.target.classList.contains("filter-item") &&
+      !event.target.classList.contains("active")) {
+
+      // desativar o que ja esta ativo 'filter-item'
+      portTabs.querySelector(".active").classList.remove("outer-shadow", "active");
+
+      // ativar um novo 'filter-item'
+      event.target.classList.add("active", "outer-shadow");
+      const target = event.target.getAttribute("data-target");
+      portfolioItems.forEach((item) => {
+         if (target === item.getAttribute("data-category") || target === 'all') {
+            item.classList.remove("hide");
+            item.classList.add("show");
+         }
+         else {
+            item.classList.remove("show");
+            item.classList.add("hide");
+         }
+      })
+   }
+})
+/*------------------------portfolio section end-------------------------*/
 
 
 //deixar com display none todas as classes com o nome section

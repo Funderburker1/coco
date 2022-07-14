@@ -10,6 +10,7 @@
    <link rel="stylesheet" href="assets/css/global.css">
    <link rel="stylesheet" href="assets/css/home.css">
    <link rel="stylesheet" href="assets/css/about.css">
+   <link rel="stylesheet" href="assets/css/portfolio.css">
    <link rel="stylesheet" href="assets/css/contact.css">
 
    <!--Fonts-->
@@ -61,7 +62,7 @@
             <h1>João Vitor</h1>
             <h2>Dev Front-End e UI Designer.</h2>
             <a class="btns btn-home outer-shadow hover-in-shadow"
-               href="https://www.linkedin.com/in/jo%C3%A3o-vitor-camargo-49815a1b0/" target="_blank">Mais sobre mim</a>
+               href="https://www.linkedin.com/in/jo%C3%A3o-vitor-camargo-49815a1b0/" target="_blank">Meu Linkedin</a>
          </div>
          <!-- <div class="avatarHome inner-shadow ">
             <img class="outer-shadow" src="assets/img/eu.svg" alt="Avatar">
@@ -106,10 +107,14 @@
             </div>
             <div class="socialMediaContainer">
                <ul class="socialMedia">
-                  <li><a href=""><i class="lab la-github-alt outer-shadow hover-in-shadow"></i></a></li>
-                  <li><a href=""><i class="lab la-linkedin-in outer-shadow hover-in-shadow"></i></a></li>
-                  <li><a href=""><i class="lab la-facebook-f outer-shadow hover-in-shadow"></i></a></li>
-                  <li><a href=""><i class="lab la-instagram outer-shadow hover-in-shadow"></i></a></li>
+                  <li><a href="https://github.com/devjoaocamargo" target="_blank"><i
+                           class="lab la-github-alt outer-shadow hover-in-shadow"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-camargo-49815a1b0/" target="_blank"><i
+                           class="lab la-linkedin-in outer-shadow hover-in-shadow"></i></a></li>
+                  <li><a href="https://www.facebook.com/joaovitor.camargo.5" target="_blank"><i
+                           class="lab la-facebook-f outer-shadow hover-in-shadow"></i></a></li>
+                  <li><a href="https://www.instagram.com/joao_vs_camargo/" target="_blank"><i
+                           class="lab la-instagram outer-shadow hover-in-shadow"></i></a></li>
                </ul>
             </div>
          </div>
@@ -121,8 +126,11 @@
                área.</p>
 
             <div class="btnText">
-               <a class="btns btn-text outer-shadow hover-in-shadow" href="">Dowload CV</a>
-               <a class="btns btn-text outer-shadow hover-in-shadow" href="">Contato</a>
+               <a class="btns btn-text outer-shadow hover-in-shadow" href="João Vitor Santos Camargo.pdf"
+                  target="_blank"><i class="las la-file-alt"></i> Dowload CV</a>
+               <a class="btns btn-text outer-shadow hover-in-shadow"
+                  href="https://api.whatsapp.com/send?phone=5511943709343" target="_blank"><i
+                     class="lab la-whatsapp"></i> Contato</a>
             </div>
          </div>
 
@@ -207,27 +215,29 @@
       </section>
       <!--About End-->
 
-
       <!--Contact Start-->
       <section id="contact" class="contact container tabcontent">
          <h1 data-heading="Contact" class="contactTitle box-title">Entrar em contato</h1>
 
          <div class="contactContent">
-            <div class="contactBox outer-shadow">
+            <a href="https://api.whatsapp.com/send?phone=5511943709343" target="_blank"
+               class="contactBox outer-shadow hover-in-shadow">
                <i class="lab la-whatsapp"></i>
                <h2>Whatsapp</h2>
                <p>+55 (11) 94370-9343</p>
-            </div>
-            <div class="contactBox outer-shadow">
+
+            </a>
+            <a href="mailto:joaovscamargo01@gmail.com" class="contactBox outer-shadow hover-in-shadow">
                <i class="las la-envelope"></i>
                <h2>E-Mail</h2>
                <p>joaovscamargo@gmail.com</p>
-            </div>
-            <div class="contactBox outer-shadow">
+            </a>
+            <a href="https://goo.gl/maps/QUmFSHM5FgDvUACX9" target="_blank"
+               class="contactBox outer-shadow hover-in-shadow">
                <i class="las la-map-marker "></i>
                <h2>Endereço</h2>
                <p>São Paulo-SP/Liberdade</p>
-            </div>
+            </a>
          </div>
 
          <footer class="contactFooter">
@@ -238,6 +248,51 @@
          </footer>
       </section>
       <!--Contact End-->
+
+      <!--Portfolio Start-->
+      <section id="port" class="portfolio container tabcontent">
+         <h1 data-heading="portfolio" class="portTitle box-title">Últimos trabalhos</h1>
+
+         <div class="portContainer">
+            <div class="port-tabs">
+               <ul>
+                  <li class="filter-item outer-shadow active" data-target="all">All</li>
+                  <li class="filter-item " data-target="web-application">Aplicação Web</li>
+                  <li class="filter-item " data-target="figma">Figma</li>
+                  <li class="filter-item " data-target="mobile-app">App Mobile</li>
+                  <li class="filter-item " data-target="e-commerce">E-Commerce</li>
+               </ul>
+            </div>
+
+            <div class="portBox">
+
+               <a href="https://player-music-anime.vercel.app/" class="box outer-shadow "
+                  data-category="web-application" target="_blank">
+                  <img src="assets/img//animePlayer.png" alt="">
+                  <h3>Player de Musica</h3>
+               </a>
+
+               <a href="#" class="box outer-shadow " data-category="figma" target="_blank">
+                  <img src="assets/img/breve.png" alt="">
+                  <h3>Figma</h3>
+               </a>
+
+
+               <a href="#" class="box outer-shadow " data-category="e-commerce" target="_blank">
+                  <img src="assets/img/breve.png" alt="">
+                  <h3>E-Commerce</h3>
+               </a>
+
+
+               <a href="#" class="box outer-shadow " data-category="mobile-app" target="_blank">
+                  <img src="assets/img/breve.png" alt="">
+                  <h3>Mobile App</h3>
+               </a>
+
+            </div>
+         </div>
+      </section>
+      <!--Portfolio End-->
    </main>
    <script src="assets/js/global.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>

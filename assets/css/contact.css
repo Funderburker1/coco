@@ -24,15 +24,15 @@
 }
 
 .contact .contactContent .contactBox {
-   padding: 3rem 1.5rem;
+   padding: 5rem 1.5rem;
    text-align: center;
-   border-radius: 0.5rem;
+   border-radius: 3rem;
    width: 100%;
 }
 
 .contact .contactContent .contactBox i {
    color: var(--color-theme);
-   font-size: 3rem;
+   font-size: 4rem;
 }
 
 .contact .contactContent .contactBox h2 {
