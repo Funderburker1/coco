@@ -1,4 +1,4 @@
-//animação maquina de escrever
+//animação maquina de escrever start
 function typeWriter(elemento) {
    const textoArray = elemento.innerHTML.split('');
    elemento.innerHTML = '';
@@ -8,6 +8,57 @@ function typeWriter(elemento) {
 }
 const titulo = document.querySelector('.title h2');
 typeWriter(titulo);
+//animação maquina de escrever end
+
+
+//preencher os dados dos card do portfolio start
+const preencherDados = (cardItem, item) => {
+   cardItem.querySelector('div').setAttribute('data-category', item.category);
+   cardItem.querySelector('.box img').src = item.img;
+   cardItem.querySelector('.box .tituloItem').innerHTML = item.name;
+   cardItem.querySelector('.box a').href = item.link;
+}
+//preencher os dados dos card do portfolio end
+
+//clone do data do Portfolio start
+portDataWeb.map(item => {
+   let cardItem = document.querySelector('.porbox_models .category').cloneNode(true);
+
+   document.querySelector('.portBox').append(cardItem)
+   // console.log(boxItem)
+   preencherDados(cardItem, item)
+});
+//clone do data do Portfolio end
+
+//clone do data Figma start
+portDataFigma.map(item => {
+   let cardItem = document.querySelector('.porbox_models .category').cloneNode(true);
+
+   document.querySelector('.portBox').append(cardItem)
+   // console.log(boxItem)
+   preencherDados(cardItem, item)
+});
+//clone do data Figma end
+
+//clone do data Mobile App start
+portDataMobileApp.map(item => {
+   let cardItem = document.querySelector('.porbox_models .category').cloneNode(true);
+
+   document.querySelector('.portBox').append(cardItem)
+   // console.log(boxItem)
+   preencherDados(cardItem, item)
+});
+//clone do data Mobile App end
+
+//clone do data Ecommerce start
+portDataEcommerce.map(item => {
+   let cardItem = document.querySelector('.porbox_models .category').cloneNode(true);
+
+   document.querySelector('.portBox').append(cardItem)
+   // console.log(boxItem)
+   preencherDados(cardItem, item)
+});
+//clone do data Ecommerce end
 
 
 /*----------------menu modal start-------------*/
@@ -104,3 +155,5 @@ sections.forEach((section) => {
       section.classList.add("hide");
    }
 })
+
+
