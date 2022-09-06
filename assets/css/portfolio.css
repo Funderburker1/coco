@@ -1,10 +1,126 @@
 .portfolio {
    width: 100%;
    height: 100%;
+   position: relative;
+
 }
 
-.portfolio h1 {
+.portfolio .portTitle {
    padding-top: 8rem;
+}
+
+.portfolio .porModal {
+   position: fixed;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0.514);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all ease .5s;
+   overflow-y: auto;
+   z-index: 100;
+   display: none;
+}
+
+.portfolio .porModal .cardModal {
+   width: 100%;
+   height: 100%;
+   background-color: var(--background-dark);
+   color: var(--color-primary);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+   position: relative;
+}
+
+.portfolio .porModal .cardModal .closeModal {
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+   font-size: 3rem;
+   color: rgb(145, 145, 145);
+   cursor: pointer;
+}
+
+.portfolio .porModal .cardModal .titleModal {
+   width: 100%;
+   margin-bottom: 2rem;
+   padding-bottom: 1rem;
+   border-bottom: 1px solid rgba(151, 151, 151, 0.281);
+   font-size: 3.5rem;
+   font-weight: 400;
+}
+
+.portfolio .porModal .cardModal .bannerItem {
+   width: 100%;
+   height: 75%;
+}
+
+.portfolio .porModal .cardModal .bannerItem img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.portfolio .porModal .cardModal .projectInfo {
+   width: 100%;
+   height: 25%;
+   /* background-color: red; */
+   display: flex;
+   align-items: center;
+   /* justify-content: space-between; */
+   margin-top: 1rem;
+   font-weight: 300;
+}
+
+.portfolio .porModal .cardModal .projectInfo .descriptionModalContainer {
+   width: 60%;
+   height: 100%;
+
+}
+
+.portfolio .porModal .cardModal .projectInfo .descriptionModalContainer .descriptionModal {
+   margin-top: 1rem;
+   color: rgba(204, 204, 204, 0.61);
+
+}
+
+.portfolio .porModal .cardModal .projectInfo .modalListContainer {
+   width: 40%;
+   height: 100%;
+}
+
+
+.portfolio .porModal .cardModal .projectInfo .modalList {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   margin-top: 1rem;
+   flex-wrap: wrap;
+}
+
+.portfolio .porModal .cardModal .projectInfo .modalList .html,
+.css,
+.js,
+.php,
+.react,
+.node,
+.sass,
+.tailwind,
+.mongodb,
+.mysql {
+   width: 25px;
+   height: 25px;
+}
+
+.portfolio .porModal .cardModal .projectInfo .modalList img {
+   width: 25px;
 }
 
 .portfolio .portContainer .port-tabs ul {
@@ -52,6 +168,12 @@
    color: rgb(90, 90, 90);
 }
 
+.portfolio .portBox .box .link-detalhes .openModal:hover {
+   color: var(--color-primary);
+   cursor: pointer;
+   transition: all 0.5s ease;
+}
+
 .portfolio .portBox .box a:visited {
    color: rgb(90, 90, 90);
 }
@@ -77,6 +199,8 @@
    font-size: 1.6rem;
 }
 
+
+
 @media(max-width: 768px) {
    .portfolio .portContainer .port-tabs ul {
       flex-wrap: wrap;
@@ -92,10 +216,36 @@
 
    .portfolio .portBox .box {
       width: 100%;
+      margin: 0rem;
+      margin-bottom: 1.5rem;
    }
 
    .portfolio .portBox .box img {
       width: 100%;
       height: auto;
+   }
+
+}
+
+@media(max-width: 425px) {
+   .portfolio .porModal .cardModal {
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+   }
+
+   .portfolio .portBox .box {
+      margin: 0rem;
+      margin-bottom: 1.5rem;
+   }
+
+   .portfolio .porModal .cardModal .projectInfo {
+      height: 50%;
+      flex-direction: column;
+      align-items: start;
+   }
+
+   .portfolio .porModal .cardModal .projectInfo .modalList {
+      flex-wrap: nowrap;
    }
 }

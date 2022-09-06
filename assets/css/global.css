@@ -41,7 +41,6 @@ body {
    background-color: var(--background-dark);
    font-size: 1.6rem;
    overflow-x: hidden;
-
 }
 
 body,
@@ -192,3 +191,9 @@ input {
 .porbox_models {
    display: none;
 }
+
+/* .row {
+   width: 20px;
+   height: 2px;
+   background-color: red;
+} */
