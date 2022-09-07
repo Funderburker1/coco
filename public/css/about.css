@@ -259,7 +259,7 @@
 }
 
 
-@media(max-width: 768px) {
+@media(max-width: 820px) {
    .about {
       padding: 0 2rem;
       grid-template-areas: "title title title"
@@ -278,7 +278,7 @@
    }
 
    .about .aboutText p {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
       line-height: 2.3rem;
    }
 
@@ -289,5 +289,11 @@
    .about .services .boxServices {
       width: 100%;
       padding-bottom: 3rem;
+   }
+}
+
+@media(max-width: 420px) {
+   .about .aboutText p {
+      font-size: 1.5rem;
    }
 }
