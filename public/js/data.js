@@ -18,7 +18,7 @@ const portDataWeb = [
       name: "Portfolio",
       img: "./img/portfolioImg.png",
       description: "Meu portofolio",
-      link: "https://devjoaocamargo.github.io/",
+      link: "https://port-joao-devjoaocamargo.vercel.app/",
       category: "web-application",
       tools: {
          html: './img/icons/icons8-html-5-48.svg',
