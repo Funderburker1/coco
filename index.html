@@ -7,11 +7,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Portfólio | João Vitor Camargo</title>
 
-   <link rel="stylesheet" href="./css/global.css">
-   <link rel="stylesheet" href="./css/home.css">
-   <link rel="stylesheet" href="./css/about.css">
-   <link rel="stylesheet" href="./css/portfolio.css">
-   <link rel="stylesheet" href="./css/contact.css">
+   <link rel="stylesheet" href="public/css/global.css">
+   <link rel="stylesheet" href="public/css/home.css">
+   <link rel="stylesheet" href="public/css/about.css">
+   <link rel="stylesheet" href="public/css/portfolio.css">
+   <link rel="stylesheet" href="public/css/contact.css">
 
    <!--Fonts-->
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,10 +32,9 @@
    <div class="menu-burguer">
       <i class="las la-times outer-shadow hover-in-shadow"></i>
       <ul class="menu">
-         <li><a class="outer-shadow hover-in-shadow tablinks" onclick="openPag(event, 'home')">Home</a>
+         <li><a class="outer-shadow hover-in-shadow tablinks" onclick="openPag(event, 'home')" id="defaultOpen">Home</a>
          </li>
-         <li><a class="outer-shadow hover-in-shadow tablinks" onclick="openPag(event, 'about')"
-               id="defaultOpen">Sobre</a></li>
+         <li><a class="outer-shadow hover-in-shadow tablinks" onclick="openPag(event, 'about')">Sobre</a></li>
          <li><a class="outer-shadow hover-in-shadow tablinks" onclick="openPag(event, 'port')">Portfólio</a></li>
          <li><a class="outer-shadow hover-in-shadow tablinks" onclick="openPag(event, 'contact')">Contato</a></li>
       </ul>
@@ -68,31 +67,31 @@
                Linkedin</a>
          </div>
          <!-- <div class="avatarHome inner-shadow ">
-            <img class="outer-shadow" src="./img/eu.svg" alt="Avatar">
+            <img class="outer-shadow" src="./public/img/eu.svg" alt="Avatar">
          </div> -->
          <div class="banner">
             <div class="icons-box">
                <div class="background">
-                  <span> <img src="./img/icons8-css3-100.svg" alt="icone css"></span>
-                  <span> <img src="./img/icons8-html-5-100.svg" alt="icone html"></span>
-                  <span> <img src="./img/icons8-javascript-100.svg" alt="icone js"></span>
-                  <span> <img src="./img/icons8-react-native-100.svg" alt="icon react"></span>
-                  <span> <img src="./img/icons8-figma-100.svg" alt="icon react"></span>
-                  <span> <img src="./img/icons8-css3-100.svg" alt="icone css"></span>
-                  <span> <img src="./img/icons8-html-5-100.svg" alt="icone html"></span>
-                  <span> <img src="./img/icons8-javascript-100.svg" alt="icone js"></span>
-                  <span> <img src="./img/icons8-react-native-100.svg" alt="icon react"></span>
-                  <span> <img src="./img/icons8-figma-100.svg" alt="icon react"></span>
-                  <span> <img src="./img/icons8-css3-100.svg" alt="icone css"></span>
-                  <span> <img src="./img/icons8-html-5-100.svg" alt="icone html"></span>
-                  <span> <img src="./img/icons8-javascript-100.svg" alt="icone js"></span>
-                  <span> <img src="./img/icons8-react-native-100.svg" alt="icon react"></span>
-                  <span> <img src="./img/icons8-figma-100.svg" alt="icon react"></span>
-                  <span> <img src="./img/icons8-css3-100.svg" alt="icone css"></span>
-                  <span> <img src="./img/icons8-html-5-100.svg" alt="icone html"></span>
-                  <span> <img src="./img/icons8-javascript-100.svg" alt="icone js"></span>
-                  <span> <img src="./img/icons8-react-native-100.svg" alt="icon react"></span>
-                  <span> <img src="./img/icons8-figma-100.svg" alt="icon react"></span>
+                  <span> <img src="./public/img/icons8-css3-100.svg" alt="icone css"></span>
+                  <span> <img src="./public/img/icons8-html-5-100.svg" alt="icone html"></span>
+                  <span> <img src="./public/img/icons8-javascript-100.svg" alt="icone js"></span>
+                  <span> <img src="./public/img/icons8-react-native-100.svg" alt="icon react"></span>
+                  <span> <img src="./public/img/icons8-figma-100.svg" alt="icon react"></span>
+                  <span> <img src="./public/img/icons8-css3-100.svg" alt="icone css"></span>
+                  <span> <img src="./public/img/icons8-html-5-100.svg" alt="icone html"></span>
+                  <span> <img src="./public/img/icons8-javascript-100.svg" alt="icone js"></span>
+                  <span> <img src="./public/img/icons8-react-native-100.svg" alt="icon react"></span>
+                  <span> <img src="./public/img/icons8-figma-100.svg" alt="icon react"></span>
+                  <span> <img src="./public/img/icons8-css3-100.svg" alt="icone css"></span>
+                  <span> <img src="./public/img/icons8-html-5-100.svg" alt="icone html"></span>
+                  <span> <img src="./public/img/icons8-javascript-100.svg" alt="icone js"></span>
+                  <span> <img src="./public/img/icons8-react-native-100.svg" alt="icon react"></span>
+                  <span> <img src="./public/img/icons8-figma-100.svg" alt="icon react"></span>
+                  <span> <img src="./public/img/icons8-css3-100.svg" alt="icone css"></span>
+                  <span> <img src="./public/img/icons8-html-5-100.svg" alt="icone html"></span>
+                  <span> <img src="./public/img/icons8-javascript-100.svg" alt="icone js"></span>
+                  <span> <img src="./public/img/icons8-react-native-100.svg" alt="icon react"></span>
+                  <span> <img src="./public/img/icons8-figma-100.svg" alt="icon react"></span>
                </div>
             </div>
          </div>
@@ -106,7 +105,7 @@
 
          <div class="box-avatar">
             <div class="aboutAvatar inner-shadow">
-               <img class="outer-shadow" src="./img/eu.svg" alt="Avatar">
+               <img class="outer-shadow" src="./public/img/eu.svg" alt="Avatar">
             </div>
             <div class="socialMediaContainer">
                <ul class="socialMedia">
@@ -276,7 +275,7 @@
 
                   <span class="closeModal"><i class="las la-times-circle"></i></span>
                   <div class="bannerItem">
-                     <img src="./img/pokedex.png" alt="">
+                     <img src="./public/img/pokedex.png" alt="">
                   </div>
                   <h1 class="titleModal"></h1>
                   <div class="projectInfo">
@@ -331,9 +330,9 @@
       </div>
    </div>
 
-   <script src="./js/data.js"></script>
-   <script src="./js/port.js"></script>
-   <script src="./js/global.js"></script>
+   <script src="./public/js/data.js"></script>
+   <script src="./public/js/port.js"></script>
+   <script src="./public/js/global.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 </body>

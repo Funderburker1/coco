@@ -16,50 +16,50 @@
 const portDataWeb = [
    {
       name: "Portfolio",
-      img: "./img/portfolioImg.png",
+      img: "public/img/portfolioImg.png",
       description: "Meu portofolio",
-      link: "https://port-joao-devjoaocamargo.vercel.app/",
+      link: "https://devjoaocamargo.github.io/",
       category: "web-application",
       tools: {
-         html: './img/icons/icons8-html-5-48.svg',
-         css: './img/icons/icons8-css3-48.svg',
-         js: './img/icons/icons8-javascript-48.svg',
+         html: 'public/img/icons/icons8-html-5-48.svg',
+         css: 'public/img/icons/icons8-css3-48.svg',
+         js: 'public/img/icons/icons8-javascript-48.svg',
       },
    },
    {
       name: "Player De Musica",
-      img: "./img/playerMusicImg.png",
+      img: "public/img/playerMusicImg.png",
       description: "Fiz um player de musica para treinar CSS e principalmente JS",
       link: "https://player-music-anime.vercel.app/",
       category: "web-application",
       tools: {
-         html: './img/icons/icons8-html-5-48.svg',
-         css: './img/icons/icons8-css3-48.svg',
-         js: './img/icons/icons8-javascript-48.svg',
+         html: 'public/img/icons/icons8-html-5-48.svg',
+         css: 'public/img/icons/icons8-css3-48.svg',
+         js: 'public/img/icons/icons8-javascript-48.svg',
       },
    },
    {
       name: "Gerador de Senhas",
-      img: "./img/geradorSenhasImg.png",
+      img: "public/img/geradorSenhasImg.png",
       description: "Fiz esse gerador de senhas treinar JS",
       link: "https://gerador-senhas-iota.vercel.app/",
       category: "web-application",
       tools: {
-         html: './img/icons/icons8-html-5-48.svg',
-         css: './img/icons/icons8-css3-48.svg',
-         js: './img/icons/icons8-javascript-48.svg',
+         html: 'public/img/icons/icons8-html-5-48.svg',
+         css: 'public/img/icons/icons8-css3-48.svg',
+         js: 'public/img/icons/icons8-javascript-48.svg',
       },
    },
    {
       name: "Pokedex",
-      img: "./img/pokedex.png",
+      img: "public/img/pokedex.png",
       description: "Fiz esse pokedex para treinar fetch do JS",
       link: "https://pokedex-rosy-two.vercel.app/",
       category: "web-application",
       tools: {
-         html: './img/icons/icons8-html-5-48.svg',
-         css: './img/icons/icons8-css3-48.svg',
-         js: './img/icons/icons8-javascript-48.svg',
+         html: 'public/img/icons/icons8-html-5-48.svg',
+         css: 'public/img/icons/icons8-css3-48.svg',
+         js: 'public/img/icons/icons8-javascript-48.svg',
       },
    },
 ];
@@ -67,7 +67,7 @@ const portDataWeb = [
 const portDataFigma = [
    {
       name: "Figma",
-      img: "./img/breve.png",
+      img: "public/img/breve.png",
       description: "breve",
       link: "#",
       category: "figma",
@@ -79,7 +79,7 @@ const portDataFigma = [
 const portDataMobileApp = [
    {
       name: "Mobile App",
-      img: "./img/breve.png",
+      img: "public/img/breve.png",
       description: "breve",
       link: "#",
       category: "mobile-app"
@@ -90,7 +90,7 @@ const portDataMobileApp = [
 const portDataEcommerce = [
    {
       name: "Ecommerce",
-      img: "./img/breve.png",
+      img: "public/img/breve.png",
       description: "breve",
       link: "#",
       category: "e-commerce",
